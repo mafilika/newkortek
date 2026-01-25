@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kortek Technologies - Gallery</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <img src="img/placeholders/logo-placeholder.png" class="logo" alt="Logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="gallery">
+  <h2>Project Gallery</h2>
+  <div class="gallery-grid">
+    <img src="img/placeholders/gallery1.jpg" onclick="openLightbox(this.src)">
+    <img src="img/placeholders/gallery2.jpg" onclick="openLightbox(this.src)">
+    <img src="img/placeholders/gallery3.jpg" onclick="openLightbox(this.src)">
+    <img src="img/placeholders/gallery4.jpg" onclick="openLightbox(this.src)">
+  </div>
+</section>
+
+<footer>
+  <p>Kortek Technologies © 2026 | Trusted Tech & Security Solutions</p>
+  <p>WhatsApp: 061 584 5083</p>
+</footer>
+
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-img">
+</div>
+
+<a href="https://wa.me/27615845083" class="floating-whatsapp">WhatsApp</a>
+</body>
+</html>
