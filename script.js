@@ -12,3 +12,17 @@ function openLightbox(src) {
 document.getElementById('lightbox').onclick = function() {
     this.style.display = 'none';
 }
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(question => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+
+    if(answer.style.maxHeight){
+      answer.style.maxHeight = null;
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
