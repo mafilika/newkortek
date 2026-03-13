@@ -26,3 +26,21 @@ questions.forEach(question => {
     }
   });
 });
+document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let email = document.getElementById("email").value;
+  let service = document.getElementById("service").value;
+
+  let message = `Hello Kortek Technologies,%0A%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Email: ${email}%0A
+Service Needed: ${service}`;
+
+  let whatsappURL = "https://wa.me/27615845083?text=" + message;
+
+  window.open(whatsappURL, "_blank");
+});
