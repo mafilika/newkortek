@@ -69,6 +69,33 @@ header nav a:hover { color:#3BA8F0; }
 .service-card img:hover { transform:scale(1.05); }
 .service-card p { margin-top:10px; font-weight:500; }
 
+.testimonials{
+    padding:70px 5%;
+    background:#EEF6FD;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.testimonial-card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.testimonial-card p{
+    font-style:italic;
+    margin-bottom:15px;
+}
+
+.testimonial-card h4{
+    color:#3BA8F0;
+}
+
 /* Gallery */
 .gallery { padding:50px 5%; }
 .gallery h2 { margin-bottom:30px; font-size:2rem; }
