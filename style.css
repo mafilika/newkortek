@@ -103,6 +103,21 @@ header nav a:hover { color:#3BA8F0; }
 .gallery-grid img { width:100%; border-radius:8px; cursor:pointer; transition:0.3s; }
 .gallery-grid img:hover { transform:scale(1.05); }
 
+.reviews{
+    padding:60px 5%;
+    background:#0A1D3B;
+    color:white;
+}
+
+.review-score h3{
+    font-size:40px;
+    color:#FFD700;
+}
+
+.review-score p{
+    margin-bottom:20px;
+}
+
 .review-form{
     padding:60px 5%;
 }
