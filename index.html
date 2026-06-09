@@ -213,16 +213,46 @@
 
 </section>
 
- <form action="https://formsubmit.co/admin@kortektechnologies.com" method="POST">
+  <form action="https://formsubmit.co/admin@kortektechnologies.com" method="POST">
 
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message"></textarea>
+  <!-- Hidden controls -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Security Installation Lead - Kortek Technologies">
 
-  <button type="submit">Send</button>
+  <!-- Lead heading inside form -->
+  <h3>Request a Free Security Quote</h3>
+  <p>Tell us what you need and we’ll get back to you within 24 hours.</p>
 
- </form>
- 
+  <!-- Name -->
+  <input type="text" name="name" placeholder="Your Full Name" required>
+
+  <!-- Phone -->
+  <input type="tel" name="phone" placeholder="Your Phone Number (e.g. 071 234 5678)" required>
+
+  <!-- Email -->
+  <input type="email" name="email" placeholder="Your Email Address (optional)">
+
+  <!-- Service selection -->
+  <select name="service" required>
+    <option value="">What do you need?</option>
+    <option>CCTV Installation</option>
+    <option>Biometric Access Control</option>
+    <option>Alarm System</option>
+    <option>Networking</option>
+    <option>Garage Motor / Gate Automation</option>
+    <option>General Security Consultation</option>
+  </select>
+
+  <!-- Message -->
+  <textarea name="message" placeholder="Tell us what you need (e.g. number of cameras, property type, location)" required></textarea>
+
+  <!-- CTA -->
+  <button type="submit">Get My Free Quote</button>
+
+  <!-- Trust line -->
+  <small>✔ No obligation • ✔ Fast response • ✔ Professional installation</small>
+
+  </form>
 <footer>
   <p>Kortek Technologies © 2026 | Trusted Tech & Security Solutions</p>
   <p>admin@kortektechnologies.com</p>
