@@ -22,6 +22,45 @@ header nav a:hover { color:#3BA8F0; }
 .btn.secondary { background:white; color:#0A1D3B; }
 .btn.secondary:hover { background:#E5E5E5; }
 
+/* Client Badges */
+
+.client-badges{
+    padding:50px 5%;
+    background:#ffffff;
+    text-align:center;
+}
+
+.client-badges h3{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#0A1D3B;
+}
+
+.badges{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.badges div{
+    background:#EEF6FD;
+    padding:20px;
+    border-radius:10px;
+    font-weight:600;
+    color:#0A1D3B;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+.badges div:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    background:#3BA8F0;
+    color:#ffffff;
+      }
+
 /* Services */
 .services { padding:50px 5%; background:#EEF6FD; }
 .services h2 { margin-bottom:30px; font-size:2rem; }
