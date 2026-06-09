@@ -103,6 +103,26 @@ header nav a:hover { color:#3BA8F0; }
 .gallery-grid img { width:100%; border-radius:8px; cursor:pointer; transition:0.3s; }
 .gallery-grid img:hover { transform:scale(1.05); }
 
+.review-form{
+    padding:60px 5%;
+}
+
+.review-form form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.review-form select,
+.review-form input,
+.review-form textarea{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
 /* Quote Form */
 .quote-form { padding:50px 5%; background:#0A1D3B; color:white; }
 .quote-form h2 { margin-bottom:20px; font-size:2rem; }
