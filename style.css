@@ -195,3 +195,63 @@ padding:0 15px;
 padding-bottom:15px;
 color:#555;
                }
+/* Contact Form Styling */
+
+form{
+    max-width:500px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px 15px;
+    border:1px solid #dce3ec;
+    border-radius:6px;
+    font-size:1rem;
+    font-family:'Poppins', sans-serif;
+    outline:none;
+    transition:0.3s;
+}
+
+/* Focus effect */
+form input:focus,
+form textarea:focus{
+    border-color:#3BA8F0;
+    box-shadow:0 0 8px rgba(59,168,240,0.3);
+}
+
+/* Textarea height */
+form textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+/* Submit button */
+form button{
+    background:#3BA8F0;
+    color:#fff;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Hover effect */
+form button:hover{
+    background:#1A6CC1;
+    transform:translateY(-2px);
+}
+
+/* Mobile responsiveness */
+@media(max-width:600px){
+    form{
+        padding:0 10px;
+    }
+    }
